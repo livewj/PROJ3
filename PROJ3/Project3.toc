@@ -1,0 +1,11 @@
+\select@language {english}
+\contentsline {section}{\numberline {1}Introduksjon}{2}
+\contentsline {section}{\numberline {2}Teori}{2}
+\contentsline {section}{\numberline {3}L\IeC {\o }sningsmetoder}{2}
+\contentsline {subsection}{\numberline {3.1}Euler}{3}
+\contentsline {subsection}{\numberline {3.2}Velocity Verlet}{4}
+\contentsline {section}{\numberline {4}Resultater}{6}
+\contentsline {subsection}{\numberline {4.1}Unnslipningshastighet}{6}
+\contentsline {subsection}{\numberline {4.2}Test av algoritmen}{7}
+\contentsline {section}{\numberline {5}Diskusjon}{7}
+\contentsline {section}{\numberline {6}Konklusjon}{7}
