@@ -12,7 +12,13 @@ public:
     SolarSystem();
     CelestialBody &createCelestialBody(vec3 position, vec3 velocity, double mass);
     void calculateForcesAndEnergy();
+    void mass_center();
     int numberOfBodies() const;
+    bool general;
+    bool m_fixed_sun;
+    bool Earth;
+    bool Mercury;
+    bool Jupiter;
 
     double totalEnergy() const;
     double potentialEnergy() const;
@@ -27,6 +33,7 @@ private:
     std::ofstream m_file;
     double m_kineticEnergy;
     double m_potentialEnergy;
+
 };
 
 #endif // SOLARSYSTEM_H

@@ -25,19 +25,42 @@ void SolarSystem::calculateForcesAndEnergy()
         // Reset forces on all bodies
         body.force.zeros();
     }
-
+    vec3 rel1;
+    vec3 rel2;
+    double dr;
     for(int i=0; i<numberOfBodies(); i++) {
         CelestialBody &body1 = m_bodies[i];
         for(int j=i+1; j<numberOfBodies(); j++) {
             CelestialBody &body2 = m_bodies[j];
             vec3 deltaRVector = body1.position - body2.position;
-            double dr = deltaRVector.length();
+            dr = deltaRVector.length();
             // Calculate the force and potential energy here
+            if(!general){
             body2.force += 4*M_PI*M_PI*body1.mass*body2.mass/(dr*dr*dr) * deltaRVector; //gravitational force
+            if(m_fixed_sun) { //sun is fixed
+                if(i != 0) {
+                    body1.force -= 4*M_PI*M_PI*body1.mass*body2.mass/(dr*dr*dr) * deltaRVector;
+                }
+            }
+            else {
+                body1.force -= 4*M_PI*M_PI*body1.mass*body2.mass/(dr*dr*dr) * deltaRVector;  //sun not fixed
+                }
+            }
+            //if you want general relativity:
+            else{
+                rel1 = 1 + 3*body1.position.cross(body1.velocity)*body1.position.cross(body1.velocity)/(dr*dr*63241.5*63241.5);
+                rel2 = 1 + 3*body2.position.cross(body2.velocity)*body2.position.cross(body2.velocity)/(dr*dr*63241.5*63241.5);
 
-            if (i != 0) //Sun is fixed
-            {
-                body1.force -= 4*M_PI*M_PI*body1.mass*body2.mass/(dr*dr*dr) * deltaRVector; }
+                body2.force += 4*M_PI*M_PI*body1.mass*body2.mass/(dr*dr*dr) * deltaRVector*rel2; //gravitational force
+                if(m_fixed_sun) { //sun is fixed
+                    if(i != 0) {
+                        body1.force -= 4*M_PI*M_PI*body1.mass*body2.mass/(dr*dr*dr) * deltaRVector * rel1;
+                    }
+                }
+                else {
+                    body1.force -= 4*M_PI*M_PI*body1.mass*body2.mass/(dr*dr*dr) * deltaRVector*rel1; //sun not fixed
+                    }
+                }
 
             m_kineticEnergy += 0.5*body2.mass*(body2.velocity + body1.velocity).lengthSquared();
             m_potentialEnergy -= 4*M_PI*M_PI*body1.mass*body2.mass/dr;
@@ -47,11 +70,30 @@ void SolarSystem::calculateForcesAndEnergy()
             //cout << m_angularMomentum.lengthSquared() << endl; //constant
 
         }
-
-
-
     }
 }
+
+void SolarSystem::mass_center() { //calculating the mass center
+    vec3 center_of_mass;
+    double total_mass;
+
+    for (CelestialBody& body: m_bodies) {
+        total_mass += body.mass; }
+
+    for (CelestialBody& body: m_bodies) {
+        center_of_mass += body.mass*body.position/total_mass; }
+
+    for (CelestialBody& body: m_bodies) {
+        body.position = body.position - center_of_mass; } //move origo to mass center
+
+    vec3 total_momentum;
+    for (CelestialBody& body: m_bodies) {
+        if (&body  != &m_bodies[0]) { //excluding the sun
+            total_momentum += body.mass*body.velocity;}
+    }
+    m_bodies[0].velocity -= total_momentum/m_bodies[0].mass; //initial velocity (sun)
+}
+
 
 int SolarSystem::numberOfBodies() const
 {
