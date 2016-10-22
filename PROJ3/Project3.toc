@@ -4,8 +4,12 @@
 \contentsline {section}{\numberline {3}L\IeC {\o }sningsmetoder}{2}
 \contentsline {subsection}{\numberline {3.1}Euler}{3}
 \contentsline {subsection}{\numberline {3.2}Velocity Verlet}{4}
-\contentsline {section}{\numberline {4}Resultater}{6}
-\contentsline {subsection}{\numberline {4.1}Unnslipningshastighet}{6}
-\contentsline {subsection}{\numberline {4.2}Test av algoritmen}{7}
+\contentsline {section}{\numberline {4}Resultater}{5}
+\contentsline {subsection}{\numberline {4.1}Test av algoritmen}{5}
+\contentsline {subsection}{\numberline {4.2}Unnslipningshastighet}{6}
+\contentsline {subsection}{\numberline {4.3}Trelegemeproblemet}{6}
+\contentsline {subsection}{\numberline {4.4}Endelig modell med alle planeter i solsystemet}{6}
+\contentsline {subsection}{\numberline {4.5}Merkurs perihelpresesjon}{6}
 \contentsline {section}{\numberline {5}Diskusjon}{7}
-\contentsline {section}{\numberline {6}Konklusjon}{7}
+\contentsline {section}{\numberline {6}Vedlegg}{7}
+\contentsline {section}{\numberline {7}Konklusjon}{7}
