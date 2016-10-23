@@ -11,7 +11,7 @@ int main(int numArguments, char **arguments)
 {
     int numTimesteps = 100000;
     if(numArguments >= 2) numTimesteps = atoi(arguments[1]);
-    double dt = 0.0001;
+    double dt = 0.01;
 
     SolarSystem solarSystem;
     // We create new bodies like this. Note that the createCelestialBody function returns a reference to the newly created body
@@ -21,9 +21,9 @@ int main(int numArguments, char **arguments)
     solarSystem.m_fixed_sun=0; //0=no, 1=yes
     //If of of the following variables are non zero, all planets will be simulated
     solarSystem.Mercury=1;
-    solarSystem.Earth=0;
-    solarSystem.Jupiter=0;
-    solarSystem.general=1;
+    solarSystem.Earth=1;
+    solarSystem.Jupiter=1;
+    solarSystem.general=0;
 
     CelestialBody &sun = solarSystem.createCelestialBody( vec3(0, 0, 0), vec3(0, 0, 0), 1.0 ); //Sun
 
@@ -59,25 +59,25 @@ int main(int numArguments, char **arguments)
         cout << "The position of this object is " << body.position << " with velocity " << body.velocity << endl;
     }
 
-    VelocityVerlet integrator(dt);
 
+    //Finding the CPU-time
     //start timer
     double CPU_time;
+    VelocityVerlet integrator(dt);
     clock_t start, finish;
     start = clock();
-
     for(int timestep=0; timestep<numTimesteps; timestep++) {
         integrator.integrateOneStep(solarSystem);
-        solarSystem.writeToFile("positions3g.txt");
+        solarSystem.writeToFile("positions3f_all.txt");
     }
 
     //stop timer
     finish = clock();
-    CPU_time = ((double) (finish - start)/CLOCKS_PER_SEC );
+    //CPU_time += ((double) (finish - start)/CLOCKS_PER_SEC );
 
+    //cout << CPU_time/10. << endl; //mean value of all CPU-times
 
     cout << "I just created my first solar system that has " << solarSystem.bodies().size() << " objects." << endl;
-    cout << "CPU-time: " << CPU_time << endl;
     return 0;
 }
 

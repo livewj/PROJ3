@@ -25,40 +25,40 @@ void SolarSystem::calculateForcesAndEnergy()
         // Reset forces on all bodies
         body.force.zeros();
     }
-    vec3 rel1;
-    vec3 rel2;
+    double rel;
+    vec3 l;
     double dr;
     for(int i=0; i<numberOfBodies(); i++) {
         CelestialBody &body1 = m_bodies[i];
         for(int j=i+1; j<numberOfBodies(); j++) {
             CelestialBody &body2 = m_bodies[j];
             vec3 deltaRVector = body1.position - body2.position;
-            dr = deltaRVector.length();
+            dr = deltaRVector.length(); //6
             // Calculate the force and potential energy here
             if(!general){
-            body2.force += 4*M_PI*M_PI*body1.mass*body2.mass/(dr*dr*dr) * deltaRVector; //gravitational force
+            body2.force += 4*M_PI*M_PI*body1.mass*body2.mass/(dr*dr*dr) * deltaRVector; //gravitational force//8flops
             if(m_fixed_sun) { //sun is fixed
                 if(i != 0) {
                     body1.force -= 4*M_PI*M_PI*body1.mass*body2.mass/(dr*dr*dr) * deltaRVector;
                 }
             }
             else {
-                body1.force -= 4*M_PI*M_PI*body1.mass*body2.mass/(dr*dr*dr) * deltaRVector;  //sun not fixed
+                body1.force -= 4*M_PI*M_PI*body1.mass*body2.mass/(dr*dr*dr) * deltaRVector;  //sun not fixed //8flops
                 }
             }
             //if you want general relativity:
             else{
-                rel1 = 1 + 3*body1.position.cross(body1.velocity)*body1.position.cross(body1.velocity)/(dr*dr*63241.5*63241.5);
-                rel2 = 1 + 3*body2.position.cross(body2.velocity)*body2.position.cross(body2.velocity)/(dr*dr*63241.5*63241.5);
+                l = deltaRVector.cross(body2.velocity-body1.velocity);
+                rel = 1 + 3*l.lengthSquared()/(dr*dr); //63241.5*63241.5
 
-                body2.force += 4*M_PI*M_PI*body1.mass*body2.mass/(dr*dr*dr) * deltaRVector*rel2; //gravitational force
+                body2.force += 4*M_PI*M_PI*body1.mass*body2.mass/(dr*dr*dr) * deltaRVector*rel; //gravitational force
                 if(m_fixed_sun) { //sun is fixed
                     if(i != 0) {
-                        body1.force -= 4*M_PI*M_PI*body1.mass*body2.mass/(dr*dr*dr) * deltaRVector * rel1;
+                        body1.force -= 4*M_PI*M_PI*body1.mass*body2.mass/(dr*dr*dr) * deltaRVector * rel;
                     }
                 }
                 else {
-                    body1.force -= 4*M_PI*M_PI*body1.mass*body2.mass/(dr*dr*dr) * deltaRVector*rel1; //sun not fixed
+                    body1.force -= 4*M_PI*M_PI*body1.mass*body2.mass/(dr*dr*dr) * deltaRVector*rel; //sun not fixed
                     }
                 }
 

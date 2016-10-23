@@ -9,10 +9,10 @@ Euler::Euler(double dt) :
 
 void Euler::integrateOneStep(SolarSystem &system)
 {
-    system.calculateForcesAndEnergy();
+    system.calculateForcesAndEnergy(); //24 flops
 
     for(CelestialBody &body : system.bodies()) {
         body.position += body.velocity*m_dt;
-        body.velocity += body.force / body.mass * m_dt;
+        body.velocity += body.force / body.mass * m_dt; //5 flops tot(29)
     }
 }
