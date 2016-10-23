@@ -1,0 +1,16 @@
+\BOOKMARK [1][-]{section.1}{Introduksjon}{}% 1
+\BOOKMARK [1][-]{section.2}{Teori}{}% 2
+\BOOKMARK [1][-]{section.3}{L\370sningsmetoder}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{Euler}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{Velocity Verlet}{section.3}% 5
+\BOOKMARK [1][-]{section.4}{Resultater}{}% 6
+\BOOKMARK [2][-]{subsection.4.1}{Konservering}{section.4}% 7
+\BOOKMARK [2][-]{subsection.4.2}{CPU-tid og FLOPS}{section.4}% 8
+\BOOKMARK [2][-]{subsection.4.3}{Feil}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.4}{Unnslipningshastighet}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.5}{Trelegemeproblemet}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.6}{Endelig modell med alle planeter i solsystemet}{section.4}% 12
+\BOOKMARK [2][-]{subsection.4.7}{Merkurs perihelpresesjon}{section.4}% 13
+\BOOKMARK [1][-]{section.5}{Diskusjon}{}% 14
+\BOOKMARK [1][-]{section.6}{Konklusjon}{}% 15
+\BOOKMARK [1][-]{section.7}{Vedlegg}{}% 16

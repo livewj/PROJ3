@@ -5,27 +5,68 @@
 \@writefile{lot}{\select@language{english}}
 \@writefile{toc}{\contentsline {section}{\numberline {1}Introduksjon}{2}}
 \@writefile{toc}{\contentsline {section}{\numberline {2}Teori}{2}}
-\@writefile{toc}{\contentsline {section}{\numberline {3}L\IeC {\o }sningsmetoder}{2}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}L\IeC {\o }sningsmetoder}{3}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Euler}{3}}
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Eksempel p\IeC {\r a} hvordan Eulers algoritme kan implementeres i en klasse i C++. Koden er hentet fra filen \texttt  {euler.cpp}.\relax }}{4}}
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
 \newlabel{euler}{{1}{4}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Velocity Verlet}{4}}
 \newlabel{1}{{4}{4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Eksempel p\IeC {\r a} hvordan velocity Verlet algoritmen kan implementeres i en klasse i C++. Koden er hentet fra filen \texttt  {velocityverlet.cpp}.\relax }}{5}}
-\newlabel{vv}{{2}{5}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Resultater}{5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Test av algoritmen}{5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Unnslipningshastighet}{6}}
-\newlabel{fig:sub1}{{3a}{6}}
-\newlabel{sub@fig:sub1}{{a}{6}}
-\newlabel{fig:sub2}{{3b}{6}}
-\newlabel{sub@fig:sub2}{{b}{6}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Figurene viser jordens bane for ulike unnslipningshastigheter. Vi ser at denne hastigheten m\IeC {\r a} ligge et sted mellom 8.75 og 8.90 AU/yr. I dette tilfellet er det ingen krefter som virker p\IeC {\r a} solen, og den er markert med en stjerne i origo.\relax }}{6}}
-\newlabel{fig:uh}{{3}{6}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Trelegemeproblemet}{6}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Endelig modell med alle planeter i solsystemet}{6}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Merkurs perihelpresesjon}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Eksempel p\IeC {\r a} hvordan velocity Verlet algoritmen kan implementeres i en klasse i C++. Koden er hentet fra filen \texttt  {velocityverlet.cpp}.\relax }}{6}}
+\newlabel{vv}{{2}{6}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Resultater}{6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Konservering}{6}}
+\newlabel{ang1}{{3a}{6}}
+\newlabel{sub@ang1}{{a}{6}}
+\newlabel{ang2}{{3b}{6}}
+\newlabel{sub@ang2}{{b}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Plottet viser Jordas angul\IeC {\ae }rmoment og total mekanisk energi over et \IeC {\r a}rhundre. Det er lett \IeC {\r a} se at b\IeC {\r a}de angul\IeC {\ae }rmoment og energi er bevart i velocity Verlet metoden. I Eulers metode er disse verdiende \IeC {\o }kende.\relax }}{6}}
+\newlabel{fig:duhhhhhh}{{3}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Jordas energi i 3-legeme problemet. Datamaskinen klarer ikke fremstille energien og angul\IeC {\ae }rmomentet som perfekt konstant. Spesiellt ikke n\IeC {\r a}r flere enn 2 legemer er involvert.\relax }}{7}}
+\newlabel{ang3}{{4}{7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}CPU-tid og FLOPS}{7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces CPU-tiden for de to ulike metodene n\IeC {\r a}r dt=0.001. Det er lett \IeC {\r a} se at velocity Verlet er mer tidkrevende enn Eulers metode, noe som stemmer godt overens med antall FLOPS denne metoden krever i forhold til Eulers metode.\relax }}{8}}
+\newlabel{CPU}{{5}{8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Feil}{8}}
+\newlabel{feil_euler}{{6a}{8}}
+\newlabel{sub@feil_euler}{{a}{8}}
+\newlabel{feil_verlet}{{6b}{8}}
+\newlabel{sub@feil_verlet}{{b}{8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Plottet her er den akkumulerte/globale feilen til hver metode n\IeC {\r a}r vi m\IeC {\r a}ler jordas bane rundt solen, en gang.\relax }}{8}}
+\newlabel{fig:duh}{{6}{8}}
+\newlabel{1swag}{{7a}{9}}
+\newlabel{sub@1swag}{{a}{9}}
+\newlabel{2swag}{{7b}{9}}
+\newlabel{sub@2swag}{{b}{9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Her ser du tierlogaritmen til de globale feilene. Deres stigning skal v\IeC {\ae }re 1 og 2 hver for seg.\relax }}{9}}
+\newlabel{fig:duhh}{{7}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Unnslipningshastighet}{9}}
+\newlabel{fig:sub1}{{8a}{10}}
+\newlabel{sub@fig:sub1}{{a}{10}}
+\newlabel{fig:sub2}{{8b}{10}}
+\newlabel{sub@fig:sub2}{{b}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Figurene viser jordens bane for ulike unnslipningshastigheter. Vi ser at denne hastigheten m\IeC {\r a} ligge et sted mellom 8.75 og 8.90 AU/yr. I dette tilfellet er det ingen krefter som virker p\IeC {\r a} solen, og den er markert med en stjerne i origo.\relax }}{10}}
+\newlabel{fig:uh}{{8}{10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Trelegemeproblemet}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Plot av jordens og Jupiters bane rundt solen. Her er Jupiters masse omtrent en tusendedel av solens masse, og vi ser at jordens bane ikke p\IeC {\r a}virkes nevneverdig.\relax }}{11}}
+\newlabel{jupiterx1}{{9}{11}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces V\IeC {\r a}r simulerte jordbanes avstand fra en perfekt sirkelbane under p\IeC {\r a}virkning av Jupiter.\relax }}{11}}
+\newlabel{stabilitetJ1}{{10}{11}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Plot av jordens og Jupiters bane rundt solen. Her er Jupiters masse \IeC {\o }kt med en faktor 1000, slik at den nesten har samme masse som solen. Tyngdekraften som virker mellom jorden og Jupiter vil derfor v\IeC {\ae }re mye st\IeC {\o }rre, og jordens bane vil p\IeC {\r a}virkes av dette. Den g\IeC {\r a}r noen ustabilde runder rundt solen f\IeC {\o }r den slynges ut i verdensrommet. \relax }}{12}}
+\newlabel{jupiterx1000}{{11}{12}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}Endelig modell med alle planeter i solsystemet}{12}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces V\IeC {\r a}rt fullstendige solsystem med alle planeter inkludert.\relax }}{13}}
+\newlabel{all}{{12}{13}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces V\IeC {\r a}r simulerte jordbanes avstand fra en perfekt sirkelbane under p\IeC {\r a}virkning av alle planetene i solsystemet.\relax }}{13}}
+\newlabel{all_error}{{13}{13}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.7}Merkurs perihelpresesjon}{13}}
+\newlabel{arc1}{{14a}{14}}
+\newlabel{sub@arc1}{{a}{14}}
+\newlabel{arc2}{{14b}{14}}
+\newlabel{sub@arc2}{{b}{14}}
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Figurene viser Merkurs perihelionspresesjon i buesekunder. Uten korreksjonsleddet fra GR har vi ingen merkbarlig presesjon.\relax }}{14}}
+\newlabel{fig:uh}{{14}{14}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Diskusjon og konklusjon}{15}}
 \bibdata{Referanser}
 \bibcite{}{1}
 \bibcite{}{2}
@@ -35,6 +76,4 @@
 \bibcite{}{6}
 \bibcite{}{7}
 \bibcite{}{8}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Diskusjon}{7}}
-\@writefile{toc}{\contentsline {section}{\numberline {6}Vedlegg}{7}}
-\@writefile{toc}{\contentsline {section}{\numberline {7}Konklusjon}{7}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Vedlegg}{16}}

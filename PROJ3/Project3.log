@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.13)  23 OCT 2016 00:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.13)  23 OCT 2016 23:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1212,6 +1212,9 @@ eX document
 )
 (./Project3.aux
 
+LaTeX Warning: Label `fig:uh' multiply defined.
+
+
 LaTeX Warning: Label `' multiply defined.
 
 
@@ -1466,95 +1469,284 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 30.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 \c__siunitx_mathtt_int=\count192
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 36.
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-) (./Project3.toc)
+ (./Project3.toc)
 \tf@toc=\write4
 \openout4 = `Project3.toc'.
 
-
-[1
+ [1
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 52--54
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--60
 
  []
 
 [2
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 83--85
+Underfull \hbox (badness 10000) in paragraph at lines 89--91
 
  []
 
-<euler.png, id=27, 425.59pt x 159.59625pt>
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 92.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+) [3]
+<euler.png, id=30, 425.59pt x 159.59625pt>
 File: euler.png Graphic file (type png)
  <use euler.png>
-Package pdftex.def Info: euler.png used on input line 91.
+Package pdftex.def Info: euler.png used on input line 97.
 (pdftex.def)             Requested size: 284.52756pt x 106.70244pt.
- [3] [4 <./euler.png>] <vv.png, id=38, 518.93875pt x 318.18875pt>
+ [4 <./euler.png>]
+<vv.png, id=37, 518.93875pt x 318.18875pt>
 File: vv.png Graphic file (type png)
  <use vv.png>
-Package pdftex.def Info: vv.png used on input line 135.
+Package pdftex.def Info: vv.png used on input line 141.
 (pdftex.def)             Requested size: 284.52756pt x 174.46542pt.
- [5 <./vv.png>]
-<3d_escape_v_8_75.png, id=44, 578.16pt x 433.62pt>
+ [5]
+Underfull \hbox (badness 10000) in paragraph at lines 149--152
+
+ []
+
+<conserved_euler_J.png, id=42, 736.4313pt x 433.62pt>
+File: conserved_euler_J.png Graphic file (type png)
+
+<use conserved_euler_J.png>
+Package pdftex.def Info: conserved_euler_J.png used on input line 158.
+(pdftex.def)             Requested size: 234.73654pt x 138.21207pt.
+
+Overfull \hbox (21.34087pt too wide) in paragraph at lines 158--159
+ [][] 
+ []
+
+<conserved.png, id=43, 802.9197pt x 433.62pt>
+File: conserved.png Graphic file (type png)
+ <use conserved.png>
+Package pdftex.def Info: conserved.png used on input line 164.
+(pdftex.def)             Requested size: 258.21162pt x 139.44934pt.
+
+Overfull \hbox (23.47508pt too wide) in paragraph at lines 164--165
+ [][] 
+ []
+
+
+Overfull \hbox (21.34087pt too wide) in paragraph at lines 156--168
+ []$[]$$[]$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--174
+
+ []
+
+<wat.png, id=44, 935.8965pt x 433.62pt>
+File: wat.png Graphic file (type png)
+ <use wat.png>
+Package pdftex.def Info: wat.png used on input line 178.
+(pdftex.def)             Requested size: 374.35197pt x 173.44492pt.
+ [6 <./vv.png> <./conserved_euler_J.png> <./conserved.png>] <CPU.png, id=51, 57
+8.16pt x 433.62pt>
+File: CPU.png Graphic file (type png)
+
+<use CPU.png>
+Package pdftex.def Info: CPU.png used on input line 193.
+(pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
+ [7 <./wat.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 201--206
+
+ []
+
+<Euler_Global.png, id=57, 578.16pt x 433.62pt>
+File: Euler_Global.png Graphic file (type png)
+ <use Euler_Global.png>
+Package pdftex.def Info: Euler_Global.png used on input line 212.
+(pdftex.def)             Requested size: 234.73654pt x 176.05182pt.
+
+Overfull \hbox (21.34087pt too wide) in paragraph at lines 212--213
+ [][] 
+ []
+
+<Verlet_Global.png, id=58, 578.16pt x 433.62pt>
+File: Verlet_Global.png Graphic file (type png)
+ <use Verlet_Global.png>
+Package pdftex.def Info: Verlet_Global.png used on input line 218.
+(pdftex.def)             Requested size: 234.73654pt x 176.05182pt.
+
+Overfull \hbox (21.34087pt too wide) in paragraph at lines 218--219
+ [][] 
+ []
+
+[8 <./CPU.png> <./Euler_Global.png> <./Verlet_Global.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 230--233
+
+ []
+
+<Euler_Global2.png, id=65, 578.16pt x 433.62pt>
+File: Euler_Global2.png Graphic file (type png)
+ <use Euler_Global2.png>
+Package pdftex.def Info: Euler_Global2.png used on input line 239.
+(pdftex.def)             Requested size: 234.73654pt x 176.05182pt.
+
+Overfull \hbox (21.34087pt too wide) in paragraph at lines 238--240
+ [] 
+ []
+
+<Verlet_Global2.png, id=66, 578.16pt x 433.62pt>
+File: Verlet_Global2.png Graphic file (type png)
+ <use Verlet_Global2.png>
+Package pdftex.def Info: Verlet_Global2.png used on input line 245.
+(pdftex.def)             Requested size: 234.73654pt x 176.05182pt.
+
+Overfull \hbox (21.34087pt too wide) in paragraph at lines 245--246
+ [][] 
+ []
+
+<3d_escape_v_8_75.png, id=67, 578.16pt x 433.62pt>
 File: 3d_escape_v_8_75.png Graphic file (type png)
  <use 3d_escape_v_8_75.png>
-Package pdftex.def Info: 3d_escape_v_8_75.png used on input line 154.
+Package pdftex.def Info: 3d_escape_v_8_75.png used on input line 263.
 (pdftex.def)             Requested size: 234.73654pt x 176.05182pt.
 
-Overfull \hbox (21.34087pt too wide) in paragraph at lines 154--155
+Overfull \hbox (21.34087pt too wide) in paragraph at lines 263--264
  [][] 
  []
 
-<3d_escape_v_8_9.png, id=45, 578.16pt x 433.62pt>
+<3d_escape_v_8_9.png, id=68, 578.16pt x 433.62pt>
 File: 3d_escape_v_8_9.png Graphic file (type png)
  <use 3d_escape_v_8_9.png>
-Package pdftex.def Info: 3d_escape_v_8_9.png used on input line 160.
+Package pdftex.def Info: 3d_escape_v_8_9.png used on input line 269.
 (pdftex.def)             Requested size: 234.73654pt x 176.05182pt.
 
-Overfull \hbox (21.34087pt too wide) in paragraph at lines 160--161
+Overfull \hbox (21.34087pt too wide) in paragraph at lines 269--270
  [][] 
  []
 
-[6 <./3d_escape_v_8_75.png> <./3d_escape_v_8_9.png>]
-Overfull \hbox (93.43048pt too wide) in paragraph at lines 189--190
-\T1/cmr/m/n/10.95 Alle koder og re-sul-tater som er brukt i rap-porten finnes p
-å Github-adressen: https://github.com/livewj/PROJ3 
+[9 <./Euler_Global2.png> <./Verlet_Global2.png>]
+<jupiterx1.png, id=74, 578.16pt x 433.62pt>
+File: jupiterx1.png Graphic file (type png)
+ <use jupiterx1.png>
+Package pdftex.def Info: jupiterx1.png used on input line 292.
+(pdftex.def)             Requested size: 284.52756pt x 213.39536pt.
+ [10 <./3d_escape_v_8_75.png> <./3d_escape_v_8_9.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 298--299
+
  []
 
+<3e_error_dt_e-3.png, id=81, 637.4214pt x 433.62pt>
+File: 3e_error_dt_e-3.png Graphic file (type png)
+ <use 3e_error_dt_e-3.png>
+Package pdftex.def Info: 3e_error_dt_e-3.png used on input line 303.
+(pdftex.def)             Requested size: 284.52756pt x 193.55908pt.
+
+<jupiterx1000.png, id=82, 578.16pt x 433.62pt>
+File: jupiterx1000.png Graphic file (type png)
+ <use jupiterx1000.png>
+Package pdftex.def Info: jupiterx1000.png used on input line 315.
+(pdftex.def)             Requested size: 284.52756pt x 213.39536pt.
+ [11 <./jupiterx1.png> <./3e_error_dt_e-3.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 321--323
+
+ []
+
+<3f_all.png, id=88, 578.16pt x 433.62pt>
+File: 3f_all.png Graphic file (type png)
+ <use 3f_all.png>
+Package pdftex.def Info: 3f_all.png used on input line 343.
+(pdftex.def)             Requested size: 341.43306pt x 256.07178pt.
+ [12 <./jupiterx1000.png>] <solar.png, id=93, 578.16pt x 433.62pt>
+File: solar.png Graphic file (type png)
+ <use solar.png>
+Package pdftex.def Info: solar.png used on input line 352.
+(pdftex.def)             Requested size: 284.52756pt x 213.39536pt.
+ [13 <./3f_all.png> <./solar.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 370--372
+
+ []
+
+<arcs1.png, id=100, 578.16pt x 433.62pt>
+File: arcs1.png Graphic file (type png)
+ <use arcs1.png>
+Package pdftex.def Info: arcs1.png used on input line 378.
+(pdftex.def)             Requested size: 234.73654pt x 176.05182pt.
+
+Overfull \hbox (21.34087pt too wide) in paragraph at lines 378--379
+ [][] 
+ []
+
+<arcs2.png, id=101, 578.16pt x 433.62pt>
+File: arcs2.png Graphic file (type png)
+ <use arcs2.png>
+Package pdftex.def Info: arcs2.png used on input line 384.
+(pdftex.def)             Requested size: 234.73654pt x 176.05182pt.
+
+Overfull \hbox (21.34087pt too wide) in paragraph at lines 384--385
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 397--398
+
+ []
+
+[14 <./arcs1.png> <./arcs2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 401--402
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 403--404
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 405--406
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 407--408
+
+ []
+
+[15]
 No file Project3.bbl.
 
-Underfull \hbox (badness 10000) in paragraph at lines 200--203
+Underfull \hbox (badness 10000) in paragraph at lines 421--424
 []\T1/cmr/m/n/10.95 Kursets off-isielle Github-side $[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 224--227
+Underfull \hbox (badness 10000) in paragraph at lines 445--448
 []\T1/cmr/m/n/10.95 Slides fra kursets off-isielle nett-side "Or-di-nary dif-fe
 r-en-tial equa-tions":
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 224--227
+Underfull \hbox (badness 10000) in paragraph at lines 445--448
 \T1/cmr/m/n/10.95 http://compphysics.github.io/ComputationalPhysics/doc/pub/ode
 /pdf/ode-
  []
 
-[7] (./Project3.aux)
+[16] (./Project3.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 32436 strings out of 493117
- 781617 string characters out of 6135433
- 881579 words of memory out of 5000000
- 35354 multiletter control sequences out of 15000+600000
- 25987 words of font info for 76 fonts, out of 8000000 for 9000
+ 32535 strings out of 493117
+ 783142 string characters out of 6135433
+ 883581 words of memory out of 5000000
+ 35439 multiletter control sequences out of 15000+600000
+ 25674 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,8n,76p,10375b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
@@ -1563,24 +1755,25 @@ Here is how much of TeX's memory you used:
 usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></us
 r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
 local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
-cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local
-/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/
-texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/te
-xlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texl
-ive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texliv
-e/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/
-2014/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/20
-14/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2014
-/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2014/t
-exmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2014/tex
-mf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2014/texmf
--dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2014/texmf-d
-ist/fonts/type1/public/cm-super/sftt1095.pfb></usr/local/texlive/2014/texmf-dis
-t/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on Project3.pdf (7 pages, 392398 bytes).
+cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local
+/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/te
+xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
+live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texli
+ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive
+/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2
+014/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/201
+4/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2014/
+texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2014/te
+xmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2014/texm
+f-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2014/texmf-
+dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2014/texmf-di
+st/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2014/texmf-dist
+/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2014/texmf-dist/f
+onts/type1/public/cm-super/sftt1095.pfb>
+Output written on Project3.pdf (16 pages, 1288351 bytes).
 PDF statistics:
- 117 PDF objects out of 1000 (max. 8388607)
- 80 compressed objects within 1 object stream
+ 180 PDF objects out of 1000 (max. 8388607)
+ 102 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 108 words of extra memory for PDF output out of 10000 (max. 10000000)
 

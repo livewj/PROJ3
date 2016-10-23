@@ -1,15 +1,16 @@
 \select@language {english}
 \contentsline {section}{\numberline {1}Introduksjon}{2}
 \contentsline {section}{\numberline {2}Teori}{2}
-\contentsline {section}{\numberline {3}L\IeC {\o }sningsmetoder}{2}
+\contentsline {section}{\numberline {3}L\IeC {\o }sningsmetoder}{3}
 \contentsline {subsection}{\numberline {3.1}Euler}{3}
 \contentsline {subsection}{\numberline {3.2}Velocity Verlet}{4}
-\contentsline {section}{\numberline {4}Resultater}{5}
-\contentsline {subsection}{\numberline {4.1}Test av algoritmen}{5}
-\contentsline {subsection}{\numberline {4.2}Unnslipningshastighet}{6}
-\contentsline {subsection}{\numberline {4.3}Trelegemeproblemet}{6}
-\contentsline {subsection}{\numberline {4.4}Endelig modell med alle planeter i solsystemet}{6}
-\contentsline {subsection}{\numberline {4.5}Merkurs perihelpresesjon}{6}
-\contentsline {section}{\numberline {5}Diskusjon}{7}
-\contentsline {section}{\numberline {6}Vedlegg}{7}
-\contentsline {section}{\numberline {7}Konklusjon}{7}
+\contentsline {section}{\numberline {4}Resultater}{6}
+\contentsline {subsection}{\numberline {4.1}Konservering}{6}
+\contentsline {subsection}{\numberline {4.2}CPU-tid og FLOPS}{7}
+\contentsline {subsection}{\numberline {4.3}Feil}{8}
+\contentsline {subsection}{\numberline {4.4}Unnslipningshastighet}{9}
+\contentsline {subsection}{\numberline {4.5}Trelegemeproblemet}{10}
+\contentsline {subsection}{\numberline {4.6}Endelig modell med alle planeter i solsystemet}{12}
+\contentsline {subsection}{\numberline {4.7}Merkurs perihelpresesjon}{13}
+\contentsline {section}{\numberline {5}Diskusjon og konklusjon}{15}
+\contentsline {section}{\numberline {6}Vedlegg}{16}
